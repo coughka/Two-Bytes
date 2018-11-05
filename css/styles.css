@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@font-face {
+    font-family: "Airbag";
+    src: url("../font/AirbagFree-Regular.otf"),
+         url("../font/AirbagFree-Regular.ttf");
+    }
+
+@import url("../css/icon.min.css");
+
+body {
+    font-family:"Open sans", sans-serif;
+    background-color:hsla(0, 0%, 95%, 0.95);
+}
+
+section {
+    padding:10vh 0;
+    display:grid;
+    align-items:center;
+    min-height:100vh;
+}
+
+.brands {
+    min-height:auto;
+    background-color:#f5f5f5;
+}
+
+.clients {
+    display:block;
+}
+
+h1 {
+    font-family:"Airbag",sans-serif;
+    font-size:3rem;
+    letter-spacing: 0.25rem;
+}
+
+h2 {
+    font-size:2.25rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    font-size:1.5rem;
+    line-height:0.75;
+    font-weight:900;
+    font-family: "Open Sans", sans-serif;
+    text-transform:uppercase;
+}
+
+h4 {
+    font-family:"Montserrat", sans-serif;
+    margin:0;
+    margin-top:1rem;
+}
+
+.ui.header-content {
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-rows:15vh 1fr 1fr;
+    align-items:center;
+    min-height:100vh;
+    position: relative;
+    color:hsla(0, 0%, 75%, 0.87);
+}
+
+.logo {
+    grid-column:span 6;
+}
+
+.text {
+    margin-right:2rem;
+}
+
+.ui.dropdown .menu {
+    margin-top:2rem;
+}
+
+.ui.dropdown {
+    justify-self:end;
+    grid-column:span 6;
+}
+
+.block-title {
+    grid-column:span 12;
+    align-self:center;
+    text-align:center;
+    width:50%;
+    margin:0 auto;
+}
+
+.block-title p {
+    font-size:1rem;
+    margin:2rem 0;
+}
+
+header {
+    background-image:linear-gradient(to right, hsla(249, 33%, 11%, 0.5), hsla(249, 33%, 11%, 0.99)), url("../img/background-header.jpg");
+    background-size:cover;
+}
+
+.ui.button {
+    text-transform:uppercase;
+    background-color:transparent;
+    border:2px solid hsla(0, 0%, 75%, 0.87);
+    color:hsla(0, 0%, 75%, 0.87);
+    border-radius:1rem;
+    padding:1rem 2rem;
+    width:auto;
+}
+
+.ui.button a {
+    color:hsla(0, 0%, 75%, 0.87);
+}
+
+.ui.button a:hover {
+    color:hsla(0, 0%, 5%, 0.87);
+    background-color:transparent;
+}
+
+.ui.icon.header-next {
+    grid-column:span 12;
+    justify-self:center;
+    border-radius:50%;
+    padding:1rem 1.5rem;
+    font-size:2rem;
+}
+
+.img-container {
+    height:8rem;
+    width:8rem;
+    background-color:hsl(211, 18%, 23%);
+    border-radius:50%;
+    margin:0 auto;
+    position:relative;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.img-container i{
+    position:absolute;
+    left: calc(50% - 1.5rem);
+    top: calc(50% - 1.25rem);
+    font-size:2.5rem;
+    color:hsla(0, 0%, 75%, 0.87);
+}
+
+.services-block {
+    text-align:center;
+}
+
+.divider {
+    width:5%;
+    height:2px;
+    background-color:hsl(211, 18%, 23%);
+    margin:1rem auto;
+}
+
+.ui.grid {
+    margin:2.5vh 0;
+}
+
+.ui.works-content {
+    width:100%;
+}
+
+.ui.grid>.row, .ui.grid>.row>.column {
+    padding:0;
+}
+
+.ui.works-content img {
+    display:inherit;
+}
+
+img {
+    margin:0 auto;
+}
+
+.carousel-item-content  {
+    text-align:center;
+}
+
+.owl-carousel {
+    margin-top:4rem;
+}
+
+.team {
+    background-image:linear-gradient(to right, hsla(249, 33%, 11%, 0.5), hsla(249, 33%, 11%, 0.99)), url("../img/background-wood.jpg");
+    background-size:contain;
+}
+
+.team .section-title {
+    color:hsla(0, 0%, 75%, 0.87);
+}
+
+.ui.team-content {
+    display:grid;
+    justify-items: center;
+}
+
+.ui.card {
+    margin:0 auto;
+}
+
+.ui.card .content {
+    background-color:#c3c8cb;
+    text-align:center;
+}
+
+.social-bar {
+    margin:0 auto;
+}
+
+.social-bar i {
+    color:#c3c8cb;
+    border-radius:50%;
+    background-color:#313334;
+    padding:0.5rem;
+}
+
+.pricing-table .ui.container {
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-row-gap: 2rem;
+
+}
+
+.pricing-table-content .section-title{
+    grid-column:span 12;
+}
+
+.pricing-table-card {
+    grid-column:span 4;
+    
+    text-align:center;
+    border-top:5px solid hsla(0, 0%, 95%, 0.95);
+}
+
+.pricing-table-card:nth-child(2) {
+    border-left:2px solid hsla(0, 0%, 75%, 0.87);
+}
+
+.pricing-table-card:nth-child(4) {
+    border-right:2px solid hsla(0, 0%, 75%, 0.87);
+}
+
+.pricing-table-card:hover {
+    border-top:5px solid hsl(211, 18%, 23%);
+    background-color:hsla(0, 0%, 95%, 0.95);
+}
+
+.pricing-table-card h4 {
+    font-size:3rem;
+    margin:0;
+}
+
+.pricing-table-card small {
+    font-size:1.25rem;
+    font-family:"Montserrat",sans-serif;
+    font-weight:700;
+}
+
+.pricing-table-card-head {
+    padding:1rem 0;
+    margin:1rem 0;
+    border-bottom:2px solid hsla(0, 0%, 75%, 0.87);
+    padding:1.5rem 3rem;
+}
+
+.pricing-table-card-head p {
+    font-size:0.75rem;
+    text-transform:uppercase;
+    font-weight:300;
+}
+
+.pricing-table-card-content {
+    padding:1.5rem 3rem;
+}
+
+.pricing-table-card-footer {
+    padding:1.5rem 3rem;
+    margin:1rem 0;
+}
+
+.pricing-table-card .ui.button {
+    background-color:hsla(249, 33%, 11%, 0.99);
+    color:hsla(0, 0%, 75%, 0.87);
+    border:0;
+}
+
+.field {
+    display:grid;
+    grid-template-columns:15% auto;
+}
+
+.ui form {
+    display:grid;
+}
+
+.form .button {
+    justify-self:center;
+}
+
+.map-and-form {
+    background-image: linear-gradient(to right, hsla(249, 33%, 11%, 0.5), hsla(249, 33%, 11%, 0.99)), url("../img/background-form.jpg");
+    background-repeat:repeat-y;
+    background-position:100%;
+}
+
+.ui.form input[type=tel], .ui.form input[type=email], .ui.form input[type=text], .ui.form textarea {
+
+    background:transparent;
+    border:2px solid hsla(0, 0%, 95%, 0.95);
+    color:hsla(0, 0%, 95%, 0.95);
+}
+
+.ui.form .inline.field>label {
+    color:hsla(0, 0%, 95%, 0.95);
+}
+
+.brands .column {
+    text-align:center;
+}
+
+.logo {
+    font-family:"Airbag",sans-serif;
+    display:inline-block;
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing: 0.25rem;
+}
+
+footer .ui.column .copyright{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.social-bar span{
+    font-size:0.75rem;
+    margin-right:2rem;
+}
+
+footer .social-bar {
+    float:right;
+}
+
+@media screen and (max-width:768px) {
+    .pricing-table-card {
+        grid-column:span 12;
+        border:2px solid hsla(0, 0%, 75%, 0.87);
+        border-top:5px solid hsla(0, 0%, 75%, 0.87);
+    }
+}
+
+@media screen and (max-width:425px) {
+    .block-title {
+        width:80%;
+    }
+
+    .ui.form .inline.field>label, .ui.form .inline.field>input, textarea {
+        grid-column:span 2;
+    }
+}
